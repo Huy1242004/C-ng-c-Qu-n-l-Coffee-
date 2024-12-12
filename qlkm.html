@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Trang chủ</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <script src="https://kit.fontawesome.com/d941d2b0a5.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="qlkm.css">
+      </head>
+      <body>
+      <div class="NenTrangChu"></div>
+        <div class="background-color">
+          <header>
+              <nav>
+                <br>  
+                <div class="menu">
+                  <div class="logo-container">
+                    <div class="logo">
+                      <img src="HinhNenTrangChu2.jpg" alt="Logo">
+                    </div>
+                    <div class="text-logo">
+                      <a href="#">Chill Coffee <br>
+                      </a>
+                      <a href="#" style="font-size: 14px;">Coffee and Tea</a>
+                    </div>
+                  </div>
+          
+                  <ul>
+                    <li><a href="Menu.html"><i class="bi bi-house-fill"></i> Trang chủ</a></li>
+                    <li ><a href="QlMenu.html"><img src="hinh2.gif" class = "img1">Quản lý menu</a></li>
+                    <li><a href="#"><img src="ban.gif" class="img1"> Quản lý bàn </a></li>
+                    <li><a href="TaiKhoan.html"><img src="NhanVien.gif" class="img1"> Quản lý tài khoản</a></li>
+                    <li><a href="#"><img src="Luong.gif" class="img1">Quản lý lương</a></li>
+                    <li class="active"><a href="#"><img src="KhuyenMai.gif" class="img1"> Quản lý Khuyến mãi</a></li>
+                  </ul>
+                </div>
+                <hr>
+              </nav>
+            </header>
+<body>
+    <div class="background-div">
+        <h2> Quản Lý Khuyến Mãi</h2>
+        
+            <input type="text" id="searchInput" placeholder="Tìm kiếm theo mã hoặc tên..." onkeyup="searchFunction()">
+        
+            <table>
+                <thead>
+                    <tr>
+                        <th>Mã Khuyến Mãi</th>
+                        <th>Tên Khuyến Mãi</th>
+                        <th>Chiết Khấu (%)</th>
+                        <th>Thời Gian Áp Dụng</th>
+                        <th>Hành Động</th>
+                    </tr>
+                </thead>
+                <tbody id="promoTableBody">
+                    <tr>
+                        <td>KM123</td>
+                        <td>Giảm giá mùa hè</td>
+                        <td>20</td>
+                        <td>01/06/2024 - 30/06/2024</td>
+                        <td class="action-buttons">
+                            <button onclick="editRow(this)">Sửa</button>
+                            <button onclick="deleteRow(this)">Xóa</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>KM456</td>
+                        <td>Khuyến mãi cuối năm</td>
+                        <td>15</td>
+                        <td>01/12/2024 - 31/12/2024</td>
+                        <td class="action-buttons">
+                            <button onclick="editRow(this)">Sửa</button>
+                            <button onclick="deleteRow(this)">Xóa</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        
+            <form id="promoForm">
+                <label for="code">Mã khuyến mãi:</label>
+                <input type="text" id="code" name="code" required>
+        
+                <label for="name">Tên khuyến mãi:</label>
+                <input type="text" id="name" name="name" required>
+        
+                <label for="discount">Chiết khấu (%):</label>
+                <input type="number" id="discount" name="discount" required min="0" max="100">
+        
+                <label for="startDate">Thời gian áp dụng bắt đầu:</label>
+                <input type="date" id="startDate" name="startDate" required>
+        
+                <label for="endDate">Thời gian áp dụng kết thúc:</label>
+                <input type="date" id="endDate" name="endDate" required>
+        
+                <button type="submit">Thêm</button>
+            </form>
+        </div>
+
+     
+
+
+      <br>
+      <br>
+      <br>
+      
+      <footer>
+        <div class="footer">
+          <div class="column">
+            <p class="content">ĐỊA CHỈ</p>
+            <hr>
+            <p class="text-footer">
+             254 Nguyễn Văn Linh (Cơ sở 1) <br>
+             03 Quang Trung (Cơ sở 2) <br>
+             120 Hoàng Minh Thảo - Hòa Khánh Nam (Cơ sở 3)
+
+            </p>
+          </div>
+          <div class="column">
+            <p class="content">LIÊN HỆ</p>
+            <hr>
+            <p class="text-footer">
+              • 0793503369 <br>
+              • ChillCoffeeDTU@gmail.com<br>
+              
+            </p>
+          </div>
+          <div class="column">
+            <p class="content">THỜI GIAN HOẠT ĐỘNG</p>
+            <hr>
+            <p class="text-footer">
+              • Hằng ngày : 6:00 AM - 22:00 PM
+            </p>
+          </div>
+        </div>
+      </footer>
+<script>
+    let editIndex = -1;
+
+    document.getElementById('promoForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+        
+        const code = document.getElementById('code').value;
+        const name = document.getElementById('name').value;
+        const discount = document.getElementById('discount').value;
+        const startDate = document.getElementById('startDate').value;
+        const endDate = document.getElementById('endDate').value;
+
+        const tableBody = document.getElementById('promoTableBody');
+        
+        if (editIndex === -1) {
+            const newRow = tableBody.insertRow();
+            newRow.innerHTML = `
+                <td>${code}</td>
+                <td>${name}</td>
+                <td>${discount}</td>
+                <td>${startDate} - ${endDate}</td>
+                <td class="action-buttons">
+                    <button onclick="editRow(this)">Sửa</button>
+                    <button onclick="deleteRow(this)">Xóa</button>
+                </td>
+            `;
+        } else {
+            const row = tableBody.rows[editIndex];
+            row.cells[0].innerText = code;
+            row.cells[1].innerText = name;
+            row.cells[2].innerText = discount;
+            row.cells[3].innerText = `${startDate} - ${endDate}`;
+            editIndex = -1; // Reset edit index
+        }
+
+        // Clear form fields
+        this.reset();
+    });
+
+    function editRow(button) {
+        const row = button.parentElement.parentElement;
+        document.getElementById('code').value = row.cells[0].innerText;
+        document.getElementById('name').value = row.cells[1].innerText;
+        document.getElementById('discount').value = row.cells[2].innerText;
+        const dates = row.cells[3].innerText.split(' - ');
+        document.getElementById('startDate').value = dates[0];
+        document.getElementById('endDate').value = dates[1];
+        
+        editIndex = row.rowIndex - 1; // Save the row index for editing
+    }
+
+    function deleteRow(button) {
+        const row = button.parentElement.parentElement;
+        row.parentElement.removeChild(row);
+    }
+
+    function searchFunction() {
+        const input = document.getElementById('searchInput');
+        const filter = input.value.toLowerCase();  bbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+        const tableBody = document.getElementById('promoTableBody');
+        const rows = tableBody.getElementsByTagName('tr');
+
+        for (let i = 0; i < rows.length; i++) {
+            const cells = rows[i].getElementsByTagName('td');
+            let found = false;
+            for (let j = 0; j < cells.length - 1; j++) { // Ignore the last cell with buttons
+                if (cells[j].innerText.toLowerCase().includes(filter)) {
+                    found = true;
+                    break;
+                }
+            }
+            rows[i].style.display = found ? '' : 'none';
+        }
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,212 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.background-div {
+    background-image: url('HinhNenTrangChu2.jpg'); /* Đường dẫn tới ảnh nền */
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+h2 {
+    text-align: center;
+    color: #fff; /* Màu chữ sáng để dễ đọc trên nền tối */
+}
+
+form {
+    background-color: rgba(255, 255, 255, 0.8); /* Nền trắng mờ */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #333; /* Màu chữ tối để dễ đọc */
+}
+
+input[type="text"], input[type="number"], input[type="date"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Nền bảng mờ */
+    border-radius: 5px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 5px;
+}
+
+#searchInput {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Logo */
+.logo {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-left: 10px;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+nav .text-logo a {
+    text-decoration: none;
+    color: #804E4E;
+    font-size: 25px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-left: 10px;
+}
+/* Chỉnh thẻ hr */
+header hr {
+    border-top: 3px solid #804E4E;
+    /* Đặt màu và độ dày cho gạch thẻ hr */
+   
+}
+
+/* các nút */
+nav .menu {
+    max-width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu ul {
+    display: flex;
+    margin-bottom: 0rem;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.menu ul li {
+    list-style: none;
+    padding: 1px;
+}
+
+.menu ul li a {
+    border-radius: 10px;
+    text-decoration: none;
+    color: #804E4E;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px 20px;
+    transition: all 0.3 ease;
+}
+
+.menu ul li.active a {
+    background: #804E4E;
+    color: white
+}
+
+.menu ul li a:hover {
+    background: #804E4E;
+    color: white
+}
+
+.footer {
+    display: flex;
+    background-color: #F5F5DC;
+}
+
+.column {
+    flex: 1;
+}
+
+.column .content {
+    margin-top: 10px;
+    font-weight: bold;
+    color: black;
+    font-size: 15px;
+    margin-left: 190px;
+    margin-bottom: -15px;
+  
+}
+
+footer hr {
+    margin-left: 40px;
+    margin-right: 40px;
+    border-top: 3px solid black;
+}
+
+.text-footer {
+    color: black;
+    margin-left: 40px;
+    font-size: 15px;
+}
+.img1{
+    width: 30px;
+    height: 30px;
+    margin-top: -15px;
+}
+
+.img2{
+    width: 100%;
+    height: 100%;
+}
+.background-color{
+    background-color: #F5F5DC ;
+}

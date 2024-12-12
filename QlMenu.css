@@ -1,0 +1,150 @@
+/* Logo */
+.logo {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-left: 10px;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+nav .text-logo a {
+    text-decoration: none;
+    color: #804E4E;
+    font-size: 25px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-left: 10px;
+}
+/* Chỉnh thẻ hr */
+header hr {
+    border-top: 3px solid #804E4E;
+    /* Đặt màu và độ dày cho gạch thẻ hr */
+   
+}
+
+/* các nút */
+nav .menu {
+    max-width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu ul {
+    display: flex;
+    margin-bottom: 0rem;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.menu ul li {
+    list-style: none;
+    padding: 1px;
+}
+
+.menu ul li a {
+    border-radius: 10px;
+    text-decoration: none;
+    color: #804E4E;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px 20px;
+    transition: all 0.3 ease;
+}
+
+.menu ul li.active a {
+    background: #804E4E;
+    color: white
+}
+
+.menu ul li a:hover {
+    background: #804E4E;
+    color: white
+}
+
+.footer {
+    display: flex;
+    background-color: #F5F5DC;
+}
+
+.column {
+    flex: 1;
+}
+
+.column .content {
+    margin-top: 10px;
+    font-weight: bold;
+    color: black;
+    font-size: 15px;
+    margin-left: 190px;
+    margin-bottom: -15px;
+  
+}
+
+footer hr {
+    margin-left: 40px;
+    margin-right: 40px;
+    border-top: 3px solid black;
+}
+
+.text-footer {
+    color: black;
+    margin-left: 40px;
+    font-size: 15px;
+}
+.img1{
+    width: 30px;
+    height: 30px;
+    margin-top: -15px;
+}
+
+.img2{
+    width: 100%;
+    height: 100%;
+}
+.background-color{
+    background-color: #F5F5DC ;
+}
+/* Hết*/
+
+/* Căn chỉnh nút thêm món */
+.text-end {
+  text-align: right;
+}
+
+/* Định dạng hình ảnh món trong bảng */
+img.menu-image {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Tạo giao diện đẹp cho bảng */
+.table th {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: #f9f9f9;
+}
+
+.table {
+  margin-bottom: 20px;
+}
+img{
+  width: 100px;
+  height: 100px;
+}

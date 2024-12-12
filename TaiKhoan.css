@@ -1,0 +1,118 @@
+#delete {
+  border-radius: 10px;
+  background-color: #8b0000;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin: 10px auto;
+  text-align: center;
+  margin-left: 1190px;
+}
+#delete:hover {
+  background-color: #a52a2a;
+}
+#comfirm {
+  border-radius: 10px;
+  background-color: #8b0000;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin: 10px auto;
+  text-align: center;
+  margin-left: 1260px;
+}
+#comfirm:hover {
+  background-color: #a52a2a;
+}
+#more {
+  border-radius: 10px;
+  background-color: #8b0000;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin: 10px auto;
+  text-align: center;
+  display: inline-block;
+}
+#more:hover {
+  background-color: #a52a2a;
+}
+a {
+  text-decoration-line: none;
+  color: white;
+}
+button {
+  text-align: center;
+  margin-top: 5px;
+}
+#back:hover {
+  background-color: #a52a2a;
+}
+#back {
+  border-radius: 10px;
+  background-color: #8b0000;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 16px;
+}
+.table-container {
+  position: relative;
+  background-image: url("HinhNenTrangChu2.jpg");
+  background-size: cover; /* Đảm bảo ảnh bao phủ toàn bộ vùng */
+  background-position: center; /* Căn giữa ảnh */
+  background-repeat: no-repeat;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Hiệu ứng đổ bóng */
+  overflow: hidden; /* Đảm bảo nội dung không tràn */
+}
+
+h2 {
+  margin-left: 550px;
+  color: white; /* Màu chữ cam (hoặc thay bằng mã màu bạn muốn) */
+  border-radius: 10px;
+  display: inline-block;
+  background-color: #8b0000;
+  font-size: 28px; /* Tăng/giảm kích thước chữ nếu cần */
+  font-weight: bold; /* Làm đậm chữ */
+}
+h3 {
+  font-size: 20px;
+  color: black;
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.transparent-table {
+  width: 100%;
+  margin: 50px auto;
+  background-color: rgba(149, 48, 58, 0.584);
+  border-collapse: collapse;
+}
+
+.transparent-table th,
+.transparent-table td {
+  /* color: rgb(0, 0, 0); */
+  color: white;
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+.transparent-table1 {
+  width: 100%;
+  margin: 50px auto;
+  background-color: rgba(149, 48, 58, 0.584);
+  border-collapse: collapse;
+}
+
+.transparent-table1 th,
+.transparent-table1 td {
+  /* color: rgb(0, 0, 0); */
+  color: white;
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
